@@ -1,0 +1,20 @@
+/* string[] siparisNo = new string[3];
+/* siparisNo[0] = "31-0 TEZ";
+/* siparisNo[1] = "31-2 DEZ";
+/* siparisNo[2] = "31-3 GEZ"; */
+
+string[] siparisNo = { "Birinci Siparis", "Ikinci Siparis", "Ucuncu Siparis", "Dorduncu Siparis" };
+int[] fiyat = { 250, 300, 350, 400 };
+int toplamFiyat = 0;
+int say = 0;
+
+foreach (string siparis in siparisNo)
+{
+    Console.WriteLine(siparis); // döngü x4
+}
+
+foreach (var tekilFiyat in fiyat)
+{
+    toplamFiyat += tekilFiyat;
+    say++;
+}
